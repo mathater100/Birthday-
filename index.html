@@ -467,22 +467,9 @@ if (window.visualViewport) {
   window.visualViewport.addEventListener('resize', syncVh, { passive: true });
 }
 
-/* Embedded photographs (replace with your Base64 data URIs or image paths) */
-const PHOTO_1 = "data:image/svg+xml;utf8," + encodeURIComponent(
-  `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-    <rect width="800" height="600" fill="#efe3d3"/>
-    <text x="50%" y="47%" dominant-baseline="middle" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#5c4638">IMG_2914.JPG</text>
-    <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#856a58">Paste Base64 data URI here</text>
-  </svg>`
-);
-
-const PHOTO_2 = "data:image/svg+xml;utf8," + encodeURIComponent(
-  `<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
-    <rect width="800" height="600" fill="#e6d6c3"/>
-    <text x="50%" y="47%" dominant-baseline="middle" text-anchor="middle" font-family="Georgia,serif" font-size="28" fill="#5c4638">FullSizeRender.jpg</text>
-    <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" font-family="sans-serif" font-size="16" fill="#856a58">Paste Base64 data URI here</text>
-  </svg>`
-);
+/* GitHub repository image paths (keep in the same folder as this HTML file) */
+const PHOTO_1 = "./IMG_2914.JPG";
+const PHOTO_2 = "./FullSizeRender.jpg";
 
 const CONFIG = {
   galleryTitle: "Favorite Moments",
